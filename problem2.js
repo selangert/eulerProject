@@ -1,6 +1,6 @@
 var sum = 0; 
 var i = 1;
-var hold = 2;
+var hold = 1;
 var value = 0;
 
 while(i < 400000000)
@@ -10,8 +10,8 @@ while(i < 400000000)
 		sum += i;
 	}
 	value = i + hold;
-    hold = value;
-	i = hold;
+    hold = i;
+	i = value;
 	
 }
 console.log(sum);
